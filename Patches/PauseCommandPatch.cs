@@ -17,6 +17,11 @@ namespace UniversalPauseCommand.Patches
 
         public static bool Prefix(string[] command, ChatBox chat)
         {
+            return Pause();
+        }
+
+        public static bool Pause()
+        {
             var i18n = ModEntry.StaticHelper.Translation;
 
             var isPaused = Game1.netWorldState.Value.IsPaused;
