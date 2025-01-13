@@ -20,6 +20,7 @@ namespace UniversalPauseCommand
             PauseCommandPatch.ApplyPatch(harmony);
             ResumeCommandPatch.ApplyPatch(harmony);
 
+            Config = helper.ReadConfig<ModConfig>();
             helper.Events.Multiplayer.ModMessageReceived += MessageManager.HandleMessage;
             helper.Events.Input.ButtonPressed += OnButtonPressed;
             helper.Events.GameLoop.GameLaunched += OnGameLaunched;
@@ -50,14 +51,14 @@ namespace UniversalPauseCommand
                 mod: ModManifest,
                 name: () => i18n.Get("config_option_name"),
                 tooltip: () => i18n.Get("config_option_tooltip"),
-                getValue: () => ModConfig.PauseKey,
-                setValue: value => ModConfig.PauseKey = value
+                getValue: () => Config.PauseKey,
+                setValue: value => Config.PauseKey = value
             );
         }
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
-            if (e.Button == ModConfig.PauseKey && Context.IsWorldReady)
+            if (e.Button == Config.PauseKey && Context.IsWorldReady)
             {
                 PauseCommandPatch.Pause();
             }
