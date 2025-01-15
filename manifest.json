@@ -1,7 +1,7 @@
 {
   "Name": "Universal Pause Command",
   "Author": "Reprodudix",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "Allows all players to use the pause command in multiplayer mode.",
   "UniqueID": "Reprodudix.UniversalPauseCommand",
   "EntryDll": "UniversalPauseCommand.dll",
