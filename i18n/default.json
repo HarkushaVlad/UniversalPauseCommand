@@ -2,6 +2,6 @@
   "error_message_multiplayer_only": "This command is only available in multiplayer mode.",
   "paused_message": "{{playerName}} has paused the game.",
   "resumed_message": "{{playerName}} has resumed the game.",
-  "config_option_name": "Pause Key",
-  "config_option_tooltip": "The key to toggle the /pause command."
+  "config_option_name": "Pause keybind",
+  "config_option_tooltip": "The keybind to toggle the /pause command."
 }
