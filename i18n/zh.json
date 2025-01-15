@@ -1,0 +1,7 @@
+{
+  "error_message_multiplayer_only": "此命令仅适用于多人联机模式.",
+  "paused_message": "{{playerName}}暂停了游戏.",
+  "resumed_message": "{{playerName}}取消了暂停.",
+  "config_option_name": "暂停键",
+  "config_option_tooltip": "切换'/pause'命令的快捷按键."
+}
