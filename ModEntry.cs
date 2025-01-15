@@ -1,6 +1,7 @@
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
+using StardewValley;
 using UniversalPauseCommand.Config;
 using UniversalPauseCommand.Messages;
 using UniversalPauseCommand.Patches;
@@ -58,7 +59,7 @@ namespace UniversalPauseCommand
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
-            if (e.Button == Config.PauseKey && Context.IsWorldReady)
+            if (e.Button == Config.PauseKey && Context.IsWorldReady && Game1.activeClickableMenu == null)
             {
                 PauseCommandPatch.Pause();
             }
