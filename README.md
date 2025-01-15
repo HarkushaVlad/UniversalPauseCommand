@@ -13,7 +13,8 @@ Menu**.
 ## Install
 
 1. Install [SMAPI](https://smapi.io).
-2. Download the mod from the [releases page](https://github.com/HarkushaVlad/UniversalPauseCommand/releases) and place it in the `Stardew Valley/Mods` folder.
+2. Download the mod from the [releases page](https://github.com/HarkushaVlad/UniversalPauseCommand/releases)
+   or [NexusMods](https://www.nexusmods.com/stardewvalley/mods/30847) and place it in the `Stardew Valley/Mods` folder.
 3. **Optional**: Install [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) to configure the
    pause key. You can always change the keybind manually by editing the configuration file in the mod directory.
 4. Launch the game with SMAPI.
